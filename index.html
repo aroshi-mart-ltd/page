@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap" rel="stylesheet">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weight Gain Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,40 +21,33 @@
           <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
-     
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
       <h2>Featured Products</h2>
-      <div class="container">
+      <div class="product">
         <img class="pdi" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBc8Kp1BWJ_zUkGRjlteUXpC7fn3FkfxLT-ppOwAAKHu1uDP8tV_18cSxmALSAM1sSX8WjeHmcKbmYjZNm3MbfBX8ArKJKzZWvhYvFonvJnUe3k-vem1u5rAQQxVvhVi9JXclGwIPd_JSrYT0sNGol0Wleb_bMPChF_J8hfsRbtpiLM_VY29QkbkURyg/s320/WhatsApp%20Image%202024-01-15%20at%206.29.00%20PM.jpg" alt="Product Image">
         <h3>Height Develop</h3>
-        <br>
         <div class="tk">
           <span style="font-weight: bold;">Offer Price:</span>
           <span style="color: rgb(72, 255, 0); font-size: 1.2em;">830TK</span>
         </div>
-        <br>
         <button onclick="openCustomContactForm()" class="custom-button">Buy Now</button>
-        
-        <div class="separator" style="clear: both; text-align: center;"><br /></div>
-        <p class="des"><br>
+        <div class="separator"></div>
+        <p class="des">
           1 বছর বয়স থেকে বয়ঃসন্ধি পর্যন্ত, 
           বেশিরভাগ লোক প্রতি বছর প্রায় 2 ইঞ্চি উচ্চতা বৃদ্ধি করে। বয়ঃসন্ধির সময়,
            এটি প্রতি বছর 4 ইঞ্চি বৃদ্ধি করা সম্ভব। 
            যাইহোক,প্রত্যেকে আলাদা হারে লম্বা হয়।
-           <br>
-           <br>
-           </p>
-        </div>
-        <div class="review"><h1><span style="color: red; font-size: 1.2em;">Review Video</h1></span></div>
+        </p>
+      </div>
+      <div class="review">
+        <h1><span style="color: red; font-size: 1.2em;">Review Video</span></h1>
+      </div>
     </div>
-  
   </section>
- 
-  <!-- Other sections like About Us, Testimonials, Contact Us can be added similarly -->
 
   <footer>
     <div class="container">
@@ -64,7 +56,7 @@
           <li><a href="#">Home</a></li>
           <li><a href="https://aroshimart-ltd.blogspot.com">Products</a></li>
           <li><a href="https://aroshimart-ltd.blogspot.com/about">About Us</a></li>
-          <li><a href="">Contact Us</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
       <div class="social">
@@ -72,69 +64,84 @@
         <a href="#"><img src="https://static.vecteezy.com/system/resources/thumbnails/016/716/467/small/twitter-icon-free-png.png" alt="Twitter"></a>
         <a href="#"><img src="https://static.vecteezy.com/system/resources/thumbnails/016/716/467/small/twitter-icon-free-png.png" alt="Instagram"></a>
       </div>
-    <div class="copyrite">
-      &copy; 2024 <a href="https://aroshimart-ltd.blogspot.com/"><span style="color:#16a34a"><b>Aroshi Mart Ltd.</b></span></a> All rights reserved.
+      <div class="copyrite">
+        &copy; 2024 <a href="https://aroshimart-ltd.blogspot.com/"><span style="color:#16a34a"><b>Aroshi Mart Ltd.</b></span></a> All rights reserved.
+      </div>
+      <div class="copyrite">
+        Developed By <a href="https://nafichshikdar.blogspot.com/"><span style="color:#f68b00"><b>Nafich Shikdar</b></span></a>
+      </div>
     </div>
-    <div class="copyrite">
-      Developed By <a href="https://nafichshikdar.blogspot.com/"><span style="color:#f68b00"><b>Nafich Shikdar</b></span></a>
   </footer>
-  
-</body>
-</html>
 
-
-
-<div class="custom-overlay" onclick="closeCustomContactForm()"></div>
+  <div class="custom-overlay" onclick="closeCustomContactForm()"></div>
 <div class="custom-contact-popup">
-  <span class="custom-close-button" onclick="closeCustomContactForm()">×</span>
-  <form action="https://formsubmit.co/nafichshikdar8@gmail.com" method="POST" style="overflow-y: auto; max-height: 400px;">
-    <div class="form-title">Fill this form to Order Now</div>
-    <label class="custom-label">Name:</label>
-    <input class="custom-input" id="name" name="name" placeholder="আপনার নাম লিখুন...
-" required="" type="text" />
-    
-    <label class="custom-label">Phone Number:</label>
-    <input class="custom-input" id="phone" name="phone" placeholder="আপনার ফোন নাম্বার লিখুন...
-" required="" type="tel" />
+    <span class="custom-close-button" onclick="closeCustomContactForm()">×</span>
+    <form id="orderForm" method="POST" style="overflow-y: auto; max-height: 400px;">
+        <div class="form-title">Fill this form to Order Now</div>
 
-    <label class="custom-label">Address:</label>
-    <textarea class="custom-textarea" id="address" name="address" placeholder="আপনি কোন যায়গা থেকে রিসিভ করবেন...
-" required=""></textarea>
-    <div>
-      <label class="custom-label">District:</label>
-      <input class="custom-input" id="district" name="district" placeholder="আপনার জেলা...
-" required="" type="text" />
+        <label class="custom-label">Name:</label>
+        <input class="custom-input" id="name" name="name" placeholder="আপনার নাম লিখুন..." required="" type="text" />
+        <label class="custom-label">Phone Number:</label>
+        <input class="custom-input" id="phone" name="phone" placeholder="আপনার ফোন নাম্বার লিখুন..." required="" type="tel" />
+        <label class="custom-label">Address:</label>
+        <textarea class="custom-textarea" id="address" name="address" placeholder="আপনি কোন যায়গা থেকে রিসিভ করবেন..." required=""></textarea>
+        <div>
+            <label class="custom-label">District:</label>
+            <input class="custom-input" id="district" name="district" placeholder="আপনার জেলা..." required="" type="text" />
+            <label class="custom-label">Upazila:</label>
+            <input class="custom-input" id="upazila" name="upazila" placeholder="আপনার উপজেলা/থানা..." required="" type="text" />
 
-      <label class="custom-label">Upazila:</label>
-      <input class="custom-input" id="upazila" name="upazila" placeholder="আপনার উপজেলা/থানা...
-" required="" type="text" />
+        </div>
+        <div>
 
-      <label class="custom-label">What is the Product Name:</label>
-      <input class="custom-input" id="product-name" name="product-name" placeholder="কোন প্রোডাক্টটি নিতে চান...?" required="" />
-    </div>
-    <div>
-      <label class="custom-label">How many pieces?</label>
-      <input class="custom-input" id="quantity" name="quantity" placeholder="কত পিস....
-?" required="" type="number" />
-    </div>
-    <input name="_captcha" type="hidden" value="false" />
-    <input name="_template" type="hidden" value="table" />
-    <input name="_next" type="hidden" value="https://aroshimart-ltd.blogspot.com/p/submite-complete.html" />
-    <button class="custom-button" type="submit">Submit</button>
-  </form>
+            <label class="custom-label">How many pieces?</label>
+            <input class="custom-input" id="quantity" name="quantity" placeholder="কত পিস....?" required="" type="number" onchange="updatePrice()" />
+
+            <label class="custom-label">Price:</label>
+            <span id="price">800 Tk</span> <!-- Initial price -->
+
+        </div>
+
+        <input name="_captcha" type="hidden" value="false" />
+        <input name="_template" type="hidden" value="table" />
+        <input name="_next" type="hidden" value="https://aroshimart-ltd.blogspot.com/p/submite-complete.html" />
+        <button class="custom-button" type="button" onclick="submitForm(this)">Submit</button>
+    </form>
 </div>
 
 <script>
-  function openCustomContactForm() {
-    document.querySelector(".custom-contact-popup").style.display = "block";
-    document.querySelector(".custom-overlay").style.display = "block";
-  }
+    function updatePrice() {
+        var quantity = document.getElementById("quantity").value;
+        var price = 800 * quantity; // Assuming each piece costs 800 Tk
+        document.getElementById("price").innerText = price + " Tk";
+    }
 
-  function closeCustomContactForm() {
-    document.querySelector(".custom-contact-popup").style.display = "none";
-    document.querySelector(".custom-overlay").style.display = "none";
-  }
+    function submitForm(button) {
+        button.disabled = true;
+        button.innerText = 'Please Wait....';
+        setTimeout(function() {
+            var form = document.getElementById("orderForm");
+            var quantity = document.getElementById("quantity").value;
+            var price = 800 * quantity; // Assuming each piece costs 800 Tk
+            form.action = "https://formsubmit.co/9f19d66143c97a01316e5be512af8cec?price=" + price;
+            form.submit();
+        }, 1000); // Adjust the delay as needed
+    }
+
+    function openCustomContactForm() {
+        document.querySelector(".custom-contact-popup").style.display = "block";
+        document.querySelector(".custom-overlay").style.display = "block";
+    }
+
+    function closeCustomContactForm() {
+        document.querySelector(".custom-contact-popup").style.display = "none";
+        document.querySelector(".custom-overlay").style.display = "none";
+    }
 </script>
+
+</body>
+</html>
+
 
 <style>
   .custom-button {
